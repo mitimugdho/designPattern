@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class ExamFactory {
+public abstract class ExamFactory {
+    public abstract Exam createExam();
 }

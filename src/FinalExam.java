@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class FinalExam implements Exam {
+    @Override
+    public String getType() {
+        return "Final Exam";
+    }
 
-public class FinalExam {
+    @Override
+    public void displayInfo() {
+        System.out.println("Type: " + getType());
+    }
 }

@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
-public class Exam {
-}
+ public interface Exam {
+    String getType();
+    void displayInfo();
+    }

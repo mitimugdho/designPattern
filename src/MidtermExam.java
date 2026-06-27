@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class MidtermExam implements Exam {
+    @Override
+    public String getType() {
+        return "Midterm Exam";
+    }
 
-public class MidtermExam {
+    @Override
+    public void displayInfo() {
+        System.out.println("Type: " + getType());
+    }
 }
