@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class EssayFactory implements QuestionFactory {
+    private final QuestionSource source;
 
-public class EssayFactory {
+    public EssayFactory(QuestionSource source) {
+        this.source = source;
+    }
+
+    @Override public Question          createQuestion()  { return source.getQuestion(); }
+    @Override public QuestionRenderer  createRenderer()  { return new EssayRenderer(); }
+    @Override public QuestionEvaluator createEvaluator() { return new EssayEvaluator(); }
 }

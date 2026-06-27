@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class EssayRenderer {
+public class EssayRenderer implements QuestionRenderer {
+    @Override
+    public void render(Question q) {
+        System.out.println(q.getQuestionText());
+    }
 }
